@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% if blog_posts %}
+        {% for post in blog_posts %}
+            <h2>{{ post.title }}</h2>
+            <h4>{{ post.text }}</h4>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
